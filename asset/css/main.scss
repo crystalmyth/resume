@@ -1,0 +1,374 @@
+// @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$white: #fff;
+$dark: #090909;
+$primary: #090909;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // font-family: 'Big Shoulders Text', cursive;
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 17px;
+    background-color: $white;
+    scroll-behavior: smooth;
+}
+
+.section-1 {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .content {
+        h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 2rem;
+            letter-spacing: 0.8rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.section-2 {
+    max-height: 40vh;
+    height: 40vh;
+    position: relative;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .content {
+            h2 {
+                font-size: 4rem;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li {
+                    position: relative;
+                    width: 50%;
+                    text-align: center;
+                    font-size: 1.2rem;
+
+                    &::before {
+                        content: '/';
+                        position: absolute;
+                        right: 0%;
+                    }
+
+                    &:nth-last-of-type(1) {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: 10px;
+        font-size: 1.5rem;
+        border: 1px solid $dark;
+        border-radius: 100%;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.section-3 {
+    display: flex;
+    padding-top: 5rem;
+
+    .image-box {
+        img {
+            border-radius: 100%;
+            border: 1px solid $dark;
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    .details {
+        padding: 2rem 1.5rem;
+    }
+}
+
+.section-4 {
+    display: flex;
+    margin-top: 5rem;
+
+    h2 {
+        font-size: 2rem;
+        color: $primary;
+        margin: 1rem 0px;
+        padding-bottom: 1rem;
+    }
+
+    .experiences {
+        max-width: 60%;
+    }
+
+    .listing {
+        .list-box {
+            border-left: 1px solid $primary;
+            padding: 0rem 1rem 1.5rem 1rem;
+            position: relative;
+
+            .header {
+                border: 1px solid $primary;
+                display: inline-block;
+                padding: 10px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 10px;
+                    width: 10px;
+                    background-color: $primary;
+                    border-radius: 100%;
+                    left: -1.4rem;
+                }
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            span {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+
+.section-5 {
+    display: flex;
+    margin: 5rem 0px;
+
+    h2 {
+        font-size: 2rem;
+        color: $primary;
+        margin: 1rem 0px;
+        padding-bottom: 1rem;
+    }
+
+    .box {
+        margin: 0.8rem 0px;
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .progress {
+            height: 5px;
+
+            .progress-bar {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 800px) {
+    .section-1 {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .content {
+            h1 {
+                font-size: 2.5rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 0.8rem;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .section-2 {
+        max-height: 40vh;
+        height: 40vh;
+        position: relative;
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .content {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        position: relative;
+                        width: 50%;
+                        text-align: center;
+                        font-size: 0.8rem;
+
+                        &::before {
+                            content: '/';
+                            position: absolute;
+                            right: 0%;
+                        }
+
+                        &:nth-last-of-type(1) {
+                            &::before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 10px;
+            font-size: 1.5rem;
+            border: 1px solid $dark;
+            border-radius: 100%;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .section-3 {
+        display: block;
+        margin-top: 5rem;
+
+        .image-box {
+            text-align: center;
+
+            img {
+                border-radius: 100%;
+                border: 1px solid $dark;
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        .details {
+            padding: 2rem 1.5rem;
+        }
+    }
+
+    .section-4 {
+        display: block;
+        margin-top: 5rem;
+
+        h2 {
+            font-size: 1.2rem;
+            color: $primary;
+            margin: 1rem 0px;
+            padding-bottom: 1rem;
+        }
+
+        .experiences {
+            max-width: 100%;
+        }
+
+        .listing {
+            .list-box {
+                border-left: 1px solid $primary;
+                padding: 0rem 1rem 1.5rem 1rem;
+                position: relative;
+
+                .header {
+                    border: 1px solid $primary;
+                    display: inline-block;
+                    padding: 10px;
+                    position: relative;
+                    font-size: 0.7rem;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+                        background-color: $primary;
+                        border-radius: 100%;
+                        left: -1.4rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                }
+
+                span {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+
+    .section-5 {
+        display: flex;
+        margin: 5rem 0px;
+
+        h2 {
+            font-size: 2rem;
+            color: $primary;
+            margin: 1rem 0px;
+            padding-bottom: 1rem;
+        }
+
+        .box {
+            margin: 0.8rem 0px;
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .progress {
+                height: 5px;
+
+                .progress-bar {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
