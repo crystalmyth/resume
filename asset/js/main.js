@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, ];
     const education = [{
         "header": '2018',
-        "title": 'NAATIONAL INSTITUTE OF TECHNOLOGY, RAIPUR',
+        "title": 'NATIONAL INSTITUTE OF TECHNOLOGY, RAIPUR',
         "content": "Bachelor of Technology, Computer Science.",
     }, ];
     const langs = [{
